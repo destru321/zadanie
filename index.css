@@ -6,7 +6,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: min-content;
-    overflow-y: hidden;
 
 }
 
@@ -14,32 +13,41 @@ input {
     font-family: 'Mountains of christmas', cursive;
 }
 
-.main {
+.main,
+.form__values,
+.wishes,
+.section1 {
     display: flex;
+}
+
+.header__heading,
+.form,
+.form__name,
+.btn-wrapper,
+.wishes,
+.wishes-text  {
+    text-align: center;
+}
+
+.main {
     justify-content: center;
 }
 
 
 .header__heading {
-    text-align: center;
     margin-bottom: 50px;
 }
 
 
 .form__values {
-    display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 20px;
 }
 
-.form {
-    text-align: center;
-}
 
 .form__name {
     width: 200px;
-    text-align: center;
     padding: 5px;
     border: 0;
     font-size: 20px;
@@ -58,10 +66,6 @@ input {
     margin-bottom: 30px;
 }
 
-.btn-wrapper {
-    text-align: center;
-}
-
 .form__button {
     width: 300px;
     height: 50px;
@@ -74,34 +78,32 @@ input {
     margin-top: 50px;
     cursor: pointer;
     font-family: 'Mountains of christmas', cursive;
+    
+}
+
+.wishes,
+.form__button {
     border: 3px solid rgba(255,255,255, 0.7);
     background-color: rgba(0,0,0, 0.5);
-    
 }
 
 
 .wishes {
     width: 200px;
     height: min-content;
-    border: 3px solid rgba(255,255,255, 0.7);
-    background-color: rgba(0,0,0, 0.5);
     border-radius: 20px;
     margin: 0 auto;
     font-size: 20px;
-    text-align: center;
     padding: 20px;
-    display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .wishes-text {
-    text-align: center;
     margin-top: 75px;
 }
 
 .section1 {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
@@ -120,10 +122,6 @@ input {
 
 @media (min-width: 664px) {
 
-    body {
-        height: 100vh;
-    }
-
     .section1 {
         gap: 20px;
     }
@@ -131,6 +129,16 @@ input {
 
 @media (min-width: 712px) {
 
+    .section1 {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 720px) {
+    body {
+        height: 100vh;
+        overflow-y: hidden;
+    }
     .section1 {
         justify-content: space-between;
     }
