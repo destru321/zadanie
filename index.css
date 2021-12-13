@@ -1,0 +1,147 @@
+body {
+    font-family: 'Mountains of christmas', cursive;
+    background-image: url('./img/aesthetic-christmas-background-download-full-14.jpg');
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: min-content;
+    overflow-y: hidden;
+
+}
+
+input {
+    font-family: 'Mountains of christmas', cursive;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.header__heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.form__values {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.form {
+    text-align: center;
+}
+
+.form__name {
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: -10px;
+}
+
+.form__name:focus {
+    width: 300px;
+    border: 2px solid black;
+    outline: none;
+    transition: width .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.form__lastname {
+    margin-bottom: 30px;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+.form__button {
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    font-size: 26px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+    font-family: 'Mountains of christmas', cursive;
+    border: 3px solid rgba(255,255,255, 0.7);
+    background-color: rgba(0,0,0, 0.5);
+    
+}
+
+
+.wishes {
+    width: 200px;
+    height: min-content;
+    border: 3px solid rgba(255,255,255, 0.7);
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 20px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wishes-text {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.err {
+    color: red;
+    font-size: 30px;
+}
+
+@media (min-width: 614px) {
+    .wishes {
+        width: 250px;
+    }
+}
+
+@media (min-width: 664px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .section1 {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 712px) {
+
+    .section1 {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section1 {
+        width: 1250px;
+    }
+
+    .wishes {
+        width: 500px;
+    }
+}

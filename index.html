@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas wishes generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1 class="header__heading">Christmas wishes generator<bdi></bdi></h1>
+    <main class="main">
+        <section class="section1">
+            <div>
+                <form class="form">
+                    <h2>At first type your first name</h2>
+                    <input type="text" placeholder="first name" class="form__name form__firstname">
+                    <h2>Now type last name</h2>
+                    <input type="text" placeholder="last name" class="form__name form__lastname" >
+                    <h2>What type of wishes do you want to generate?</h2>
+                    <div class="form__values">
+                        <div>
+                            Classic <input type="radio" name="wishType" value="classic" id="classic">
+                        </div>
+                        <div>
+                            For friend <input type="radio" name="wishType" value="friend" id="friend">
+                        </div>
+                        <div>
+                            For lover <input type="radio" name="wishType" value="lover" id="lover">
+                        </div>
+                        <div>
+                            For family <input type="radio" name="wishType" value="family" id="family">
+                        </div>
+                        <div>
+                            Funny <input type="radio" name="wishType" value="funny" id="funny">
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-wrapper">
+                    <button class="form__button">Generate wishes!</button>
+                </div>
+            </div>
+            <div>
+                <h1 class="wishes-text">Here are your wishes!</h1>
+                <div class="wishes">
+                    <p class="date"></p>
+                    <p class="text"></p>
+                    <p class="author"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
