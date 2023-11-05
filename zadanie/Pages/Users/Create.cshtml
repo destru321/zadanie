@@ -1,0 +1,17 @@
+﻿@page
+@model zadanie.Pages.Users.CreateModel
+@{
+}
+
+<form method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" asp-for="User!.name">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="phone" asp-for="User!.phone">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
